@@ -1,0 +1,35 @@
+.sign-area ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    background-color: brown;
+    padding: 30px;
+    border-radius: 20px;
+}
+.sign-area li{
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 0px;
+}
+.submit-btn{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(90, 16, 16);
+    transition: 0.1s;
+}
+.input-area{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.submit-btn:hover{
+    background-color: rgb(123, 1, 1);
+}
