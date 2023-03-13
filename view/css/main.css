@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family:Arial, Helvetica, sans-serif;
 }
 body{
     background-color: rgb(173, 70, 70);
@@ -23,22 +23,23 @@ body{
 .top-nav-ul li{
     list-style: none;
 }
-.top-nav-ul button{
+.top-nav-ul  button{
     height: 100%;
     padding: 20px;
     border: 0;
     background-color: rgb(84, 0, 0);
     transition: 0.1s;
-}
-.top-nav-ul a{
-    text-decoration: none;
     font-size: 20px;
     color: white;
 }
-.top-nav-ul button:hover{
+.top-nav-ul a{
+    text-decoration: none;
+}
+.top-nav-ul  button:hover{
     background-color: rgb(160, 0, 0);
 }
 .main-display{
+    width: 55vw;
     display: flex;
     top: 50%;
     left: 50%;
@@ -59,11 +60,14 @@ body{
 .main-display h1{
     text-align: center;
     color: rgb(255, 182, 182);
-    font-weight: 100;
+    font-weight: 500;
     font-size: 60px;
 }
 .main-display h2{
     font-weight: 100;
+    color: white;
+}
+.main-display hr{
     color: white;
 }
 .main-display button{
@@ -76,6 +80,7 @@ body{
     transition: 0.1s;
     border: 40;
     border-color: white;
+    transform: translateY(50%);
 }
 .main-display button:hover{
     background-color: rgb(160, 0, 0);
@@ -85,4 +90,38 @@ body{
 }
 .grow-two{
     flex-grow:1;
+}
+@media (max-width: 900px){
+    .main-display hr{
+        border-radius: 20px;
+        border: 1px solid;
+    }
+    .main-display h1{
+        border: 1px solid;
+        border-radius: 40px;
+        background-color: rgb(146, 0, 0);
+    }
+    .main-display button{
+        transform: translateY(0);
+    }
+    .main-display{
+        margin-top: 40px;
+        border: 2px solid;
+        border-radius: 50px;
+        border-color: white;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+}
+@media (max-width: 500px) {
+    .main-display{
+        min-width: 100vw;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
 }
